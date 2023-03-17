@@ -1,0 +1,20 @@
+[package]
+name = "learn-beavy"
+version = "0.1.0"
+rust-version = "1.68.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = "0.10.0"
+rand = "0.8.5"
+
+[workspace]
+resolver = "2"
+
+[profile.dev]
+opt-level = 1
+
+# [profile.dev.package."*"]
+# opt-level = 3
